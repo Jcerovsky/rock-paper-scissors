@@ -21,16 +21,19 @@ function App() {
   }, []);
 
   const backgroundImgStyle = {
-    background: "url(../public/bg-triangle.svg) no-repeat center",
+    background: "url(/assets/bg-triangle.svg) no-repeat center",
     backgroundSize: "70%",
   };
 
   return (
-    <div className="bg-gradient-to-b from-slate-500 to-slate-700 flex flex-col h-screen text-white p-7 overflow-y-hidden">
+    <div
+      className="bg-gradient-to-b from-slate-500 to-slate-700 flex flex-col h-screen text-white p-7
+    "
+    >
       <div className="flex justify-between font-bold text-xl border-2 rounded-md p-3">
         <div className="leading-4 mt-auto mb-auto">
           <img
-            src="../public/assets/logo.svg"
+            src="/assets/logo.svg"
             className="w-7/12"
             alt="logo with words rock paper scissors"
           ></img>
@@ -78,7 +81,8 @@ function App() {
 
       <section className="flex justify-center tracking-widest mb-10">
         <span
-          className="border-2 rounded-lg p-2 w-5/12 text-center md:ml-auto md:w-2/12"
+          className="border-2 rounded-lg p-2 w-5/12 text-center md:ml-auto md:w-2/12 cursor-pointer
+          hover:bg-zinc-200 hover:text-slate-500 duration-300"
           onClick={() => setAreRulesShown((prevState) => !prevState)}
         >
           RULES

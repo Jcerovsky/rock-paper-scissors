@@ -92,7 +92,8 @@ function Match({ choice, setScore, setIsGameStarted }: Props) {
         <div className="flex flex-col justify-center items-center mt-12 gap-5">
           <p className="text-5xl font-bold">{result}</p>
           <button
-            className="p-2 w-9/12 bg-white rounded-lg text-black text-2xl tracking-widest cursor-pointer hover:scale-75 md:w-1/4	"
+            className="p-2 w-9/12 bg-white rounded-lg text-black text-2xl tracking-widest cursor-pointer hover:scale-90
+            md:w-1/4 duration-300	"
             onClick={() => setIsGameStarted(false)}
           >
             PLAY AGAIN

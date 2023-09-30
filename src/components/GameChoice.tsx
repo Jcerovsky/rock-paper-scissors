@@ -15,7 +15,8 @@ function GameChoice({
 }: Props) {
   return (
     <div
-      className={`p-6 rounded-full shadow-lg cursor-pointer hover:shadow-inner hover:scale-105 transition-transform\t hover:ease-in-out`}
+      className={`p-6 rounded-full cursor-pointer hover:scale-105 duration-200 hover:ease-in-out 
+      hover:shadow-[0px_0px_70px_50px_#4A5568] `}
       style={{ backgroundColor: bgColor }}
       onClick={() => {
         setUserSelection!(choice);
@@ -26,7 +27,7 @@ function GameChoice({
         src={`/assets/icon-${choice}.svg`}
         className={`${
           choice === "rock" ? "p-6" : "p-5 pl-6 pr-6"
-        } bg-white rounded-full shadow-xl`}
+        } bg-white rounded-full shadow-xl `}
         alt={`${choice} icon`}
       />
     </div>
