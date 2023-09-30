@@ -30,7 +30,7 @@ function App() {
       <div className="flex justify-between font-bold text-xl border-2 rounded-md p-3">
         <div className="leading-4 mt-auto mb-auto">
           <img
-            src="../public/logo.svg"
+            src="../public/assets/logo.svg"
             className="w-7/12"
             alt="logo with words rock paper scissors"
           ></img>

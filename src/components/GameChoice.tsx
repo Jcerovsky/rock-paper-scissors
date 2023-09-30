@@ -23,7 +23,7 @@ function GameChoice({
       }}
     >
       <img
-        src={`../public/icon-${choice}.svg`}
+        src={`../public/assets/icon-${choice}.svg`}
         className={`${
           choice === "rock" ? "p-6" : "p-5 pl-6 pr-6"
         } bg-white rounded-full shadow-xl`}
